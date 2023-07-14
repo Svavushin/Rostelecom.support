@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/speedtest_CardView"
+            android:layout_width="160dp"
+            android:layout_height="280dp"
+
+            android:backgroundTint="@color/purple_200"
+
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/cardviewselector"
+
+
+            app:cardCornerRadius="8dp"
+
+            app:cardElevation="8dp"
+            app:layout_column="0"
+
+            app:layout_columnWeight="1"
+
+            app:layout_gravity="center"
+
+            app:layout_row="0"
+            app:layout_rowWeight="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardview_background_gradient" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/speedTestIco"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_speedtest_round" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Тест скорости"
+                    android:textColor="@color/white">
+
+                </TextView>>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/netInfo_CardsView"
+            android:layout_width="160dp"
+            android:layout_height="280dp"
+            android:layout_margin="8dp"
+
+            android:backgroundTint="@color/purple_200"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/cardviewselector"
+            app:cardCornerRadius="8dp"
+
+            app:cardElevation="8dp"
+            app:layout_column="1"
+
+            app:layout_columnWeight="1"
+
+            app:layout_gravity="center"
+
+            app:layout_row="0"
+            app:layout_rowWeight="1">
+
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardview_background_gradient" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/netInfoIco"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_net_info_round" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Инфо о сети"
+                    android:textColor="@color/white">
+
+                </TextView>>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/safety_CardView"
+            android:layout_width="160dp"
+            android:layout_height="280dp"
+            android:layout_margin="8dp"
+
+            android:backgroundTint="@color/purple_200"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/cardviewselector"
+            app:cardCornerRadius="8dp"
+
+            app:cardElevation="8dp"
+            app:layout_column="0"
+
+            app:layout_columnWeight="1"
+
+            app:layout_gravity="center"
+
+            app:layout_row="1"
+            app:layout_rowWeight="1">
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardview_background_gradient" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/safetyIco"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_safety_round" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Безопасность"
+                    android:textColor="@color/white">
+
+                </TextView>>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/featuresCardView"
+            android:layout_width="160dp"
+            android:layout_height="280dp"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/purple_200"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="@drawable/cardviewselector"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+
+            app:layout_column="1"
+            app:layout_columnWeight="1"
+
+            app:layout_gravity="center"
+
+            app:layout_row="1"
+
+            app:layout_rowWeight="1">
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cardview_background_gradient" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/featuresIco"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_features_round" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Характеристики"
+                    android:textColor="@color/white">
+
+                </TextView>>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
